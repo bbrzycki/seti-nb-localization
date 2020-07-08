@@ -8,6 +8,7 @@ import json
 import time
 
 import numpy as np
+import pandas as pd
 import blimpy as bl
 from astropy import units as u
 
@@ -113,6 +114,12 @@ if __name__ == '__main__':
                     info_list.append(frame_info)
 
                     print('Saved frame {} for db {:d} {} set, with {:d} rfi signals'.format(j, sig_db, split_name, rfi_num))
+                    
+            # Save out labels using pandas
+            df = pd.DataFrame(info_list)
+            df.to_csv('{}/{}/{}/labels.csv'.format(path, 
+                                                   xsig,
+                                                   split_name), index=False)
 
     end_time = time.time()
     print('Dataset generation finished in {:.2f} minutes'.format((end_time - start_time)/60))
