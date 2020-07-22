@@ -8,3 +8,4 @@ blimpy==2.0.0
 pandas==1.0.3
 scipy==1.4.1
 seaborn==0.10.1
+turbo-seti==1.2.2
