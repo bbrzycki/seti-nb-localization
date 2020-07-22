@@ -1,7 +1,3 @@
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-
 import sys, os, glob, errno
 import csv
 import json
@@ -12,7 +8,6 @@ import pandas as pd
 import blimpy as bl
 from astropy import units as u
 
-sys.path.insert(0, "../setigen/")
 import setigen as stg
 
 
@@ -82,7 +77,7 @@ def generate_frame(sig_db, rfi_num=0):
     return frame, frame_info
 
 
-if __name__ == '__main__':
+def main():
     start_time = time.time()
     path = '/datax/scratch/bbrzycki/data/nb-localization'
 
@@ -123,3 +118,7 @@ if __name__ == '__main__':
 
     end_time = time.time()
     print('Dataset generation finished in {:.2f} minutes'.format((end_time - start_time)/60))
+    
+    
+if __name__ == "__main__":
+    main()
