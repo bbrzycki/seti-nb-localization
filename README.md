@@ -4,7 +4,7 @@ Dataset generation and ML scripts for localization of narrow-band signals, as de
 
 ### Brief descriptions of included files
 
-`create_dataset.py`: Dataset generation script, produces entirely synthetic data frames with ideal chi-squared background noise and constant intensity narrow-band signals. Creates both one and two signal datasets. Uses `setigen` to create synthetic frames.
+`create_dataset.py`: Dataset generation script, produces entirely synthetic data frames with ideal chi-squared background noise and constant intensity narrow-band signals. Creates both one and two signal datasets. Uses [`setigen`](https://github.com/bbrzycki/setigen) to create synthetic frames.
 
 `train_cnn.py`: Contains all ML-related code, including model architectures, custom data generators, and training/testing routines. Accepts command-line arguments to facilitate multiple experiments. Uses Keras with a Tensorflow backend.
 
