@@ -1,5 +1,5 @@
 # seti-nb-localization
-Dataset generation and ML scripts for localization of narrow-band signals, as described in Brzycki et al. 2020 (submitted). 
+Dataset generation and ML scripts for localization of narrow-band signals, as described in Brzycki et al. 2020 ([PASP](https://doi.org/10.1088/1538-3873/abaaf7)). 
 
 
 ### Brief descriptions of included files
